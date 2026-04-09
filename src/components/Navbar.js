@@ -51,7 +51,7 @@ function Navbar() {
 
   return (
     <nav style={styles.nav}>
-      <span style={styles.logo}>Amel Mehdaoui</span>
+      <span style={styles.logo}>A.M</span>
       <ul style={styles.links}>
         <li><a href="#hero" style={styles.link}>Accueil</a></li>
         <li><a href="#about" style={styles.link}>À propos</a></li>

@@ -167,7 +167,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/photo.jpg"
+            src={process.env.PUBLIC_URL + '/photo.jpg'}
             alt="Amel Mehdaoui"
             style={{
               width: '100%',

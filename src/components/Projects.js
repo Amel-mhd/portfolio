@@ -9,7 +9,8 @@ const projects = [
     description: "Site Marvel avec liste de personnages, comics, favoris et moteur de recherche. Fullstack React & Node.js.",
     stack: ['React', 'Node.js', 'Marvel API', 'MongoDB'],
     github: 'https://github.com/Amel-mhd/marvel',
-    logo: '/marvel.png',
+    live: 'https://marvel-amel.netlify.app',
+    logo: process.env.PUBLIC_URL + '/marvel.png',
     color: '#1a0808',
   },
   {
@@ -19,7 +20,7 @@ const projects = [
     description: "Réplique de l'application Vinted. Fullstack avec authentification, publication d'annonces et recherche.",
     stack: ['React Native', 'Expo', 'Node.js', 'MongoDB'],
     github: 'https://github.com/Amel-mhd/vinted-mobile',
-    logo: '/vinted.png',
+    logo: process.env.PUBLIC_URL + '/vinted.png',
     color: '#0d0d0d',
   },
   {
@@ -29,7 +30,8 @@ const projects = [
     description: "Réplique de l'interface Netflix. Affichage des films et séries avec une interface soignée.",
     stack: ['React', 'JavaScript', 'CSS'],
     github: 'https://github.com/Amel-mhd/netflix',
-    logo: '/netflix.png',
+    live: 'https://netlix-amel.netlify.app/',
+    logo: process.env.PUBLIC_URL + '/netflix.png',
     color: '#1a0808',
   },
   {
@@ -39,7 +41,8 @@ const projects = [
   description: "Jeu de mémoire - retournez les cartes et trouvez les paires.",
   stack: ['React', 'JavaScript', 'CSS'],
   github: 'https://github.com/Amel-mhd/memory-game',
-  logo: '/memory-logo.png',
+  live: 'https://memory-game-amel.netlify.app/',
+  logo: process.env.PUBLIC_URL + '/memory-logo.png',
   color: '#0d1a0d',
 },
 {
@@ -48,8 +51,9 @@ const projects = [
   subtitle: 'Application Web',
   description: "Application météo - entrez une ville et voyez la météo en temps réel.",
   stack: ['React', 'API Météo', 'JavaScript', 'CSS'],
-  github: 'https://github.com/Amel-mhd/weather-app',
-  logo: '/weather-logo.png',
+  github: 'https://github.com/Amel-mhd/weather',
+  live:'https://weather-amel.netlify.app/',
+  logo: process.env.PUBLIC_URL + '/weather-logo.png',
   color: '#080d1a',
 },
 ];
@@ -330,6 +334,27 @@ function Projects() {
                       >
                         Voir sur GitHub
                       </motion.a>
+                      {project.live && (
+  <motion.a
+    initial={{ y: 20, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ delay: 0.35 }}
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    style={{
+      fontSize: '11px',
+      letterSpacing: '3px',
+      textTransform: 'uppercase',
+      color: '#C4A882',
+      textDecoration: 'none',
+      borderBottom: '1px solid rgba(196,168,130,0.3)',
+      paddingBottom: '4px',
+      alignSelf: 'flex-start',
+    }}
+  >
+    Voir le site
+  </motion.a> )}
                     </motion.div>
                   )}
                 </AnimatePresence>
