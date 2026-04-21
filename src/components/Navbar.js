@@ -47,6 +47,17 @@ function Navbar() {
       cursor: 'pointer',
       transition: 'color 0.3s',
     },
+    cvLink: {
+      color: '#C4A882',
+      textDecoration: 'none',
+      fontSize: '11px',
+      letterSpacing: '2px',
+      textTransform: 'uppercase',
+      cursor: 'pointer',
+      transition: 'color 0.3s',
+      border: '1px solid rgba(196,168,130,0.4)',
+      padding: '6px 14px',
+    },
   };
 
   return (
@@ -56,6 +67,7 @@ function Navbar() {
         <li><a href="#hero" style={styles.link}>Accueil</a></li>
         <li><a href="#about" style={styles.link}>À propos</a></li>
         <li><a href="#projects" style={styles.link}>Projets</a></li>
+        <li><a href="#cv" style={styles.link}>CV</a></li>
         <li><a href="#contact" style={styles.link}>Contact</a></li>
       </ul>
     </nav>
