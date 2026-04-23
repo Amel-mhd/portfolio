@@ -2,6 +2,18 @@ import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
+
+  {
+  id: 0,
+  title: 'Aura',
+  subtitle: 'Boutique de Parfums',
+  description: "Boutique de parfums haut de gamme. Catalogue de 74 fragrances, quiz olfactif, favoris, panier et avis clients. Fullstack React & Node.js.",
+  stack: ['React', 'Node.js', 'MongoDB', 'Express'],
+  github: 'https://github.com/Amel-mhd/perfume-app',
+  live: 'https://perfume-amel-app.netlify.app',
+  logo: process.env.PUBLIC_URL + '/aura-logo.png',
+  color: '#1a1408',
+},
   {
     id: 1,
     title: 'Marvel Universe',
