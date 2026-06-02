@@ -14,19 +14,37 @@ const projects = [
   logo: process.env.PUBLIC_URL + '/aura-logo.png',
   color: '#1a1408',
 },
- {
+
+{
   id: 1,
+  title: 'DEEP',
+  subtitle: 'Immersive Diving Experience',
+  description:
+    "Expérience immersive de plongée sous-marine avec animations cinématiques, galerie interactive, navigation immersive et pages détaillées de spots de plongée.",
+  stack: [
+    'React',
+    'Framer Motion',
+    'CSS',
+    'UI/UX',
+  ],
+  github: 'https://github.com/Amel-mhd/deep',
+  live: 'deep-amel.netlify.app',
+  logo: process.env.PUBLIC_URL + '/logoplongée.png',
+  color: '#031522',
+},
+ {
+  id: 2,
   title: "Coffee'Mel",
   subtitle: 'Coffee Shop Premium',
   description: "Site vitrine premium pour un coffee shop parisien. Pages accueil, menu, réservation, contact et à propos avec animations, responsive design et identité visuelle complète.",
   stack: ['React', 'Framer Motion', 'CSS', 'Netlify'],
   github: 'https://github.com/Amel-mhd/Coffee-Mel',
-  live: 'https://coffemel.netlify.app',
+  live: 'https://coffeemel.netlify.app',
   logo: process.env.PUBLIC_URL + '/coffeemel-logo.png',
   color: '#3D2008',
 },
   {
-    id: 2,
+    id: 3,
     title: 'Marvel Universe',
     subtitle: 'Application Web',
     description: "Site Marvel avec liste de personnages, comics, favoris et moteur de recherche. Fullstack React & Node.js.",
@@ -37,7 +55,7 @@ const projects = [
     color: '#1a0808',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Vinted Mobile',
     subtitle: 'Application Mobile',
     description: "Réplique de l'application Vinted. Fullstack avec authentification, publication d'annonces et recherche.",
@@ -47,7 +65,7 @@ const projects = [
     color: '#0d0d0d',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Netflix Clone',
     subtitle: 'Application Web',
     description: "Réplique de l'interface Netflix. Affichage des films et séries avec une interface soignée.",
@@ -58,7 +76,7 @@ const projects = [
     color: '#1a0808',
   },
   {
-  id: 5,
+  id: 6,
   title: 'Memory Game',
   subtitle: 'Jeu Web',
   description: "Jeu de mémoire - retournez les cartes et trouvez les paires.",
@@ -69,7 +87,7 @@ const projects = [
   color: '#0d1a0d',
 },
 {
-  id: 6,
+  id: 7,
   title: 'Weather App',
   subtitle: 'Application Web',
   description: "Application météo - entrez une ville et voyez la météo en temps réel.",
