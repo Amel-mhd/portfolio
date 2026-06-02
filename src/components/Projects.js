@@ -28,7 +28,7 @@ const projects = [
     'UI/UX',
   ],
   github: 'https://github.com/Amel-mhd/deep',
-  live: 'deep-amel.netlify.app',
+  live: 'https://deep-amel.netlify.app',
   logo: process.env.PUBLIC_URL + '/logoplongée.png',
   color: '#031522',
 },
@@ -252,26 +252,35 @@ function Projects() {
                   borderRadius: '4px',
                 }}
               >
-                <div style={{
-                  position: 'absolute',
-                  top: 0, left: 0, right: 0, bottom: 0,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                  <motion.img
-                    src={project.logo}
-                    alt={project.title}
-                    animate={{ scale: hovered === project.id ? 1.1 : 1 }}
-                    transition={{ duration: 0.6 }}
-                    style={{
-                      width: '160px',
-                      height: '160px',
-                      objectFit: 'contain',
-                      filter: 'brightness(0.9)',
-                    }}
-                  />
-                </div>
+                <div
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    overflow: 'hidden',
+  }}
+>
+  <motion.img
+    src={project.logo}
+    alt={project.title}
+    animate={{ scale: hovered === project.id ? 1.05 : 1 }}
+    transition={{ duration: 0.6 }}
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      filter:
+        hovered === project.id
+          ? 'brightness(1)'
+          : 'brightness(0.85)',
+    }}
+  />
+</div>
 
                 <AnimatePresence>
                   {hovered === project.id && (
