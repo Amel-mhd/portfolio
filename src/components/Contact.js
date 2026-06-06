@@ -36,7 +36,7 @@ function Contact() {
     try {
     const result = await emailjs.sendForm(
     "service_srcc9mi",
-    "template_yi1e6vi",
+    "template_y1ie6vi",
     form.current,
     "dPTvun38AOmREaTit"
   );
@@ -48,12 +48,11 @@ function Contact() {
 }
       
    catch (err) {
-   console.error("EMAILJS ERROR :", err);
-   alert(
-   err?.text ||
-   err?.message ||
- "Erreur EmailJS : le message n'a pas été envoyé"
-  );
+  console.log("STATUS:", err?.status);
+  console.log("TEXT:", err?.text);
+  console.log("FULL:", err);
+
+  alert(err?.text || "Erreur inconnue");
 }
      finally {
       setLoading(false);
