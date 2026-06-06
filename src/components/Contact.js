@@ -34,17 +34,28 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     try {
-      await emailjs.sendForm(
-        'service_srcc9mi',
-        'template_yi1e6vi',
-        form.current,
-        'dPTvun38AOmREaTit'
-      );
-      setSent(true);
-      form.current.reset();
-    } catch (err) {
-      console.error(err);
-    } finally {
+    const result = await emailjs.sendForm(
+    "service_srcc9mi",
+    "template_yi1e6vi",
+    form.current,
+    "dPTvun38AOmREaTit"
+  );
+
+  console.log("EMAILJS SUCCESS :", result);
+  alert("Message envoyé avec succès !");
+  setSent(true);
+  form.current.reset();
+}
+      
+   catch (err) {
+   console.error("EMAILJS ERROR :", err);
+   alert(
+   err?.text ||
+   err?.message ||
+ "Erreur EmailJS : le message n'a pas été envoyé"
+  );
+}
+     finally {
       setLoading(false);
     }
   };
