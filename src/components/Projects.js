@@ -64,8 +64,20 @@ const projects = [
     logo: process.env.PUBLIC_URL + '/vinted.png',
     color: '#0d0d0d',
   },
+
   {
-    id: 5,
+  id: 5,
+  title: "Jeu d'échecs",
+  subtitle: "Application Interactive",
+  description: "Application d'échecs développée en React permettant de jouer directement dans le navigateur. Gestion des déplacements des pièces, de l'alternance des tours et d'une interface interactive inspirée d'un véritable échiquier.",
+  stack: ['React', 'JavaScript', 'CSS', 'Vercel'],
+  github: 'https://https://github.com/Amel-mhd/royal-chess',
+  live: 'amel-royal-chess.netlify.app',
+  logo: process.env.PUBLIC_URL + '/chess-logo.png',
+  color: '#2F4F4F',
+},
+  {
+    id: 6,
     title: 'Netflix Clone',
     subtitle: 'Application Web',
     description: "Réplique de l'interface Netflix. Affichage des films et séries avec une interface soignée.",
@@ -76,7 +88,7 @@ const projects = [
     color: '#1a0808',
   },
   {
-  id: 6,
+  id: 7,
   title: 'Memory Game',
   subtitle: 'Jeu Web',
   description: "Jeu de mémoire - retournez les cartes et trouvez les paires.",
@@ -87,7 +99,7 @@ const projects = [
   color: '#0d1a0d',
 },
 {
-  id: 7,
+  id: 8,
   title: 'Weather App',
   subtitle: 'Application Web',
   description: "Application météo - entrez une ville et voyez la météo en temps réel.",
